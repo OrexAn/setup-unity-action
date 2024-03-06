@@ -1,0 +1,12 @@
+name: 'Setup Unity'
+     description: 'Setup Unity environment for building Unity projects.'
+     runs:
+       using: 'docker'
+       image: 'Dockerfile'
+     inputs:
+       unity-version:
+         description: 'The version of Unity to install.'
+         required: true
+       components:
+         description: 'The Unity components to install.'
+         required: true
