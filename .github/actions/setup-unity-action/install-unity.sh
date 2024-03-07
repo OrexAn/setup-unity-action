@@ -3,7 +3,7 @@ bash
 
      UNITY_VERSION=$1
      COMPONENTS=$2
-	 DOWNLOAD_DIR="${{ github.workspace }}"
+	 DOWNLOAD_DIR="${{ github.actions.setup-unity-action }}"
 
      # Download and install Unity
      curl -o "${DOWNLOAD_DIR}/UnitySetup.sh" https://download.unity3d.com/download_unity/f18e0c1b5784/LinuxEditorInstaller/Unity.tar.xz
