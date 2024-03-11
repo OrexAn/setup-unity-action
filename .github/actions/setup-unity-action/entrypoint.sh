@@ -3,9 +3,9 @@
 # Function to find the Unity executable
 find_unity_executable() {
     # List common directories where Unity might be installed
-    unity_executable=$(find /opt/unity -type f -executable -name 'Unity' -print -quit)
+    unity_executable=$(find $HOME -type f -executable -name 'Unity' -print -quit)
     if [ -z "$unity_executable" ]; then
-        unity_executable=$(find /usr/bin -type f -executable -name 'Unity' -print -quit)
+        unity_executable=$(find $HOME -type f -executable -name 'Unity' -print -quit)
     fi
     # Add additional directories as needed
 
