@@ -15,7 +15,7 @@ bash
 	 
      # Make UnitySetup.sh executable
 	 chmod +x UnitySetup.sh
-     ./Unity.tar.xz --unattended --install-location=/opt/unity --components=${COMPONENTS}
+     ./Unity.tar.xz --unattended --install-location=$HOME --components=${COMPONENTS}
 	 
 	 # Cleanup
 	 rm -rf Unity.tar.xz UnitySetup.sh

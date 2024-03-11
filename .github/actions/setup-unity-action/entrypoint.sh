@@ -23,7 +23,7 @@ main() {
         # Run Unity commands here, if needed
         echo "Running Unity commands..."
         # Example: Run Unity in batch mode
-        "$unity_path" -batchmode -logFile build.log -projectPath "WebGL test" -executeMethod YourBuildScript.Build
+        "$unity_path" -batchmode -logFile build.log -projectPath "WebGL test" -executeMethod Builder.BuildWindowsStandalone
 
         echo "Unity commands executed successfully."
     else
