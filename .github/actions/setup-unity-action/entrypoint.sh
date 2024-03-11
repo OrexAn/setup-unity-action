@@ -3,13 +3,14 @@
 # Function to find the Unity executable
 find_unity_executable() {
     # List common directories where Unity might be installed
+	echo "Unity path sould be $HOME"
     unity_executable=$(find $HOME -type f -executable -name 'Unity' -print -quit)
     if [ -z "$unity_executable" ]; then
         unity_executable=$(find $HOME -type f -executable -name 'Unity' -print -quit)
     fi
     # Add additional directories as needed
 
-    echo "$unity_executable"
+    echo "Unity path is $unity_executable"
 }
 
 # Main entry point
